@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Store</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class="background">
+    <div class="position">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-left">
+                    <a class="logo" href="index.html">Book Store</a>
+                </div>
+                <div class="navbar-center">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search for books...">
+                        <button onclick="searchBooks()">Search</button>
+                        <div id="searchResults"></div>
+                    </div>
+                </div>
+                <div class="navbar-right">
+                    <a href="register.html">Sign Up</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="navigation-links">
+            <a href="about.php">About</a>
+            <a href="categories.php">Categories</a>
+            <a href="Best seller.php">Best seller</a>
+            <a href="cart.php">Cart</a>
+        </div>
+   </div>
+
+
+    <!-- Rest of your content -->
+    <section>
+        <div class="image_slider_container">
+            <div class="image_sliders">
+                <div class="slider_content">
+                    <div>
+                        <h1>Explore</h1>
+                        <h1>Book Genres</h1>
+                        <p>Dive into various literary genres and expand your reading horizons. From romance to science
+                            fiction,
+                            we have a wide range of genres to satisfy your interests</p>
+                        <button class="slider_button" onclick="window.location.href='../html/shop.html'">Shop
+                            Now</button>
+                    </div>
+                </div>
+                <div class="slider_image"><img src="/src/copy.jpg" alt="" style="overflow: hidden;"></div>
+            </div>
+            <div class="image_sliders">
+                <div class="slider_content">
+                    <div>
+                        <h1>Discover</h1>
+                        <h1>New Releases</h1>
+                        <p>Explore our collection of the latest book releases and stay up to date with the newest
+                            literary works in various genres.</p>
+                        <button class="slider_button" onclick="window.location.href='../html/shop.html'">Shop
+                            Now</button>
+                    </div>
+                </div>
+                <div class="slider_image"><img src="/src/hello1.PNG" alt="">
+                </div>
+            </div>
+            <div class="image_sliders">
+                <div class="slider_content">
+                    <div>
+                        <h1>Quality</h1>
+                        <h1>Books</h1>
+                        <p> Access an exquisite selection of high-quality books, carefully curated for exceptional
+                            storytelling and
+                            literary excellence. Elevate your reading experience with our captivating collection
+                        </p>
+                        <button class="slider_button" onclick="window.location.href='../html/shop.html'">Shop
+                            Now</button>
+                    </div>
+                </div>
+                <div class="slider_image"><img src="/src/meet.PNG" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="whats-new">
+            <h2>What's New</h2>
+            <!-- Books Container -->
+            <div class="books-container">
+                <!-- Book 1 -->
+                <div class="book">
+                    <img src="/src/save.PNG" alt="Book 1">
+                    <h3>Saving time</h3>
+                    <p class="price">$19.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Book 2 -->
+                <div class="book">
+                    <img src="/src/have.PNG" alt="Book 2">
+                    <h3>The Great believers</h3>
+                    <p class="price">$14.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Book 3 -->
+                <div class="book">
+                    <img src="/src/cold.PNG" alt="Book 3">
+                    <h3>Cold people</h3>
+                    <p class="price">$12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Book 4 -->
+                <div class="book">
+                    <img src="/src/moon.PNG" alt="Book 4">
+                    <h3>Half moon</h3>
+                    <p class="price">$9.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Book 5 -->
+                <div class="book">
+                    <img src="/src/pine.PNG" alt="Book 5">
+                    <h3>Pineapple street</h3>
+                    <p class="price">$17.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Book 6 -->
+                <div class="book">
+                    <img src="/src/wager.PNG" alt="Book 6">
+                    <h3>The wager</h3>
+                    <p class="price">$16.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Book 7 -->
+                <div class="book">
+                    <img src="/src/Survivalists.PNG" alt="Book 7">
+                    <h3>The Survivalists</h3>
+                    <p class="price">$11.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Book 8 -->
+                <div class="book">
+                    <img src="/src/nicole.PNG" alt="Book 8">
+                    <h3>A living remedy</h3>
+                    <p class="price">$13.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Author Section -->
+
+
+        <section>
+            <div class="authors">
+                <h2>Authors</h2>
+                <!-- Author 1 -->
+                <div class="author-container">
+                    <div class="slide">
+                        <img src="/src/the love.PNG" alt="Image 1">
+                        <div class="author-details">
+                            <h3><a href="HONORÉE FANONNE JEFFERS">HONORÉE FANONNE JEFFERS</a></h3>
+                            <p>Number of Books: 3</p>
+                            <img src="/src/HONORÉE FANONNE JEFFERS.PNG" alt="Author 1">
+                        </div>
+                    </div>
+                    <!-- Author 2 -->
+                    <div class="slide">
+                        <img src="/src/twi.PNG" alt="Image 2">
+                        <div class="author-details">
+                            <h3>JANICE HALLETT</h3>
+                            <p>Number of Books: 5</p>
+                            <img src="/src/JANICE HALLETT.PNG" alt="Author 2">
+                        </div>
+                    </div>
+                    <!-- Author 3 -->
+                    <div class="slide">
+                        <img src="/src/last house.PNG" alt="Image 3">
+                        <div class="author-details">
+                            <h3>DIANE CHAMBERLAIN</h3>
+                            <p>Number of Books: 2</p>
+                            <img src="/src/DIANE CHAMBERLAIN.PNG" alt="Author 3">
+                        </div>
+                    </div>
+                    <!-- Author 3 -->
+                    <div class="slide">
+                        <img src="/src/notes.PNG" alt="Image 3">
+                        <div class="author-details">
+                            <h3>DANYA KUKAFKA</h3>
+                            <p>Number of Books: 2</p>
+                            <img src="/src/DANYA KUKAFKA.PNG" alt="Author 3">
+                        </div>
+                    </div>
+                    <!-- Author 3 -->
+                    <div class="slide">
+                        <img src="/src/reputation.PNG" alt="Image 3">
+                        <div class="author-details">
+                            <h3>Author Name 3</h3>
+                            <p>Number of Books: 2</p>
+                            <img src="/src/SARAH VAUGHAN.PNG" alt="Author 3">
+                        </div>
+                    </div>
+                    <!-- Author 3 -->
+                    <div class="slide">
+                        <img src="/src/these days.PNG" alt="Image 3">
+                        <div class="author-details">
+                            <h3>LUCY CALDWELL</h3>
+                            <p>Number of Books: 2</p>
+                            <img src="/src/LUCY CALDWELL.PNG" alt="Author 3">
+                        </div>
+                    </div>
+                    <!-- Author 3 -->
+
+                    <div class="slide">
+                        <img src="/src/that green.PNG" alt="Image 3">
+                        <div class="author-details">
+                            <h3>JULIE OWEN MOYLAN</h3>
+                            <p>Number of Books: 2</p>
+                            <img src="/src/JULIE OWEN MOYLAN.PNG" alt="Author 3">
+                        </div>
+                    </div>
+                    <!-- Author 3 -->
+                    <div class="slide">
+                        <img src="/src/moonlight.PNG" alt="Image 3">
+                        <div class="author-details">
+                            <h3>LIZZIE POOK</h3>
+                            <p>Number of Books: 2</p>
+                            <img src="/src/LIZZIE POOK.PNG" alt="Author 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+</body>
+<script src="/js/script.js"></script>
+
+</html>
