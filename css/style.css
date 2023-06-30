@@ -1,11 +1,10 @@
 /* book store*/
-.background {
-    background-color: lightgrey;
-}
 .position {
+   
     position: sticky;
     top: 0;
     z-index: 100;
+    
 }
 .background img {
     background-attachment: fixed;
@@ -141,9 +140,11 @@ section {
 }
 
 /* slider css starts */
+
+.back{
+    background-color:lightgrey;
+}
 .image_slider_container {
-  background-color:aliceblue;
-    /* background-color: green; */
     position: relative;
     height: 80vh;
     width: 100%;
@@ -168,7 +169,6 @@ section {
 
 .image_sliders .slider_content {
     margin: 20px;
-    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,8 +192,7 @@ section {
     border: none;
     font-size: 14px;
     width: 130px;
-    color: white;
-    background-image: url("bk.PNG");
+    color:black;
     margin-top:30px ;
     padding: 14px;
     border-radius: 15px;
@@ -201,7 +200,7 @@ section {
 
 .image_sliders .slider_content div button:hover {
 
-    color:white;
+    color:#333;
     background-color: red;
     font-size: 18px;
     transition: all 0.5s ease;
@@ -223,8 +222,6 @@ section {
   /* slider thingy ends. Be happy now. W */
 
 /* typing text css  */
-
-
 
 /*whats new*/
 .whats-new {
