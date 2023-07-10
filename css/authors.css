@@ -94,12 +94,13 @@
 }
 
 .container1 {
-    background-color:bisque;
+    background-color:black;
     background-image: url("/src/shelf.avif");
     border-radius: 20px;
     height: 1000px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     box-sizing: border-box;
+    color: beige;
 
 
 
@@ -107,6 +108,11 @@
 .image {
 border-radius: 100%;
       
+}
+.cardo img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 .cardo{
@@ -127,3 +133,5 @@ border-radius: 100%;
 .row {
     display: flex;
 }
+
+

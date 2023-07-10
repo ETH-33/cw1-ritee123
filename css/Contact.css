@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .contact_main {
+    width: 400px;
+    height: 500px;
+    background: #E5E5E5;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+  }
+  
+  .contact_us {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form_content {
+    padding: 40px;
+  }
+  
+  .form_content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form_content input {
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .Submit_btn {
+    width: 100%;
+    height: 40px;
+    background: grey;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .Submit_btn:hover {
+    background: #333;
+  }
+  
+  .branch_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .office1 {
+    width: 45%;
+  }
+  
+  .office1 h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .office1 p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .office1 a {
+    color: blue;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .google_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .map {
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+  }
+  
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .footer_contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .payment_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .payment_content img {
+    margin: 10px;
+  }
+  
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .Best_Seller {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  
+  .Best_Seller h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .locta {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .locta img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .copywrite {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .coypname {
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Best_Seller {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  
