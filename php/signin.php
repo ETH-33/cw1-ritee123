@@ -2,9 +2,10 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
+$database = "ritee";
 
 // Create connection
-$conn = mysqli_connect("localhost","root","","data");
+$conn = mysqli_connect("localhost","root","","ritee");
 // Check connection
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
@@ -16,12 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $username = $_POST['username'];
   $email = $_POST['email'];
   $password = $_POST['password'];
-  $confirmPassword = $_POST['confirmPassword'];
+ 
 
-  // Perform any necessary data validation here...
-  if ($password !== $confirmPassword) {
-    die("Password and Confirm Password do not match!");
-  }
   //Hashed Password
   $hashedPassword = md5($password);
 
