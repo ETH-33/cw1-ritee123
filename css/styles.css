@@ -429,10 +429,7 @@ footer {
     }
   }
 /* Book collections styles */
-.collect h2 {
-  
 
-}
 .book-collections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
