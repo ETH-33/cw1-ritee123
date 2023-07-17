@@ -1,54 +1,93 @@
+body {
+  background-image: url("/src/backsk.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  height: 100vh; /* Set the section height to cover the full viewport */
+  
+}
+
 .book-collections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 40px;
+  grid-gap: 20px;
 }
 
 .collection {
-  background-image: url("../src/shock.jpg");
-  background-size: cover;
-  padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("/src/bac.png");
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+   
 }
 
 .collection:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Scale up the collection on hover */
 }
 
 .collection img {
-  width: 100%;
+  width: 200px;
   height: auto;
-  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 .collection h3 {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 10px;
-  background-color: beige;
-  padding: 8px 0;
+  color: brown;
+
 }
 
 .collection p {
-  font-size: 14px;
-  color: #ffffff;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .collection .explore-collection {
-  padding: 8px 16px;
   background-color: #4caf50;
   color: #fff;
   border: none;
+  padding: 8px 16px;
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.collection .explore-collection:hover {
-  background-color: #45a049;
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.book-list li {
+  margin-bottom: 10px;
+}
+
+.book-list h4,
+.book-list p {
+  margin: 0;
+}
+
+.book-list .add-to-cart {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
 }

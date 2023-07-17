@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
 
 </head>
 <body>
-   
+ <div class="contain">  
 <div class="form-container">
 
    <form action="" method="post">
@@ -70,7 +70,7 @@ if(isset($_POST['submit'])){
       <input type="submit" name="submit" value="register now" class="form-btn">
       <p>already have an account? <a href="login_form.php">login now</a></p>
    </form>
-
+   </div>
 </div>
 
 </body>

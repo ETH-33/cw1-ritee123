@@ -6,6 +6,7 @@
    box-sizing: border-box;
    outline: none; border:none;
    text-decoration: none;
+  
 }
 
 .container,
@@ -78,6 +79,7 @@
    margin-bottom: 10px;
    color: #333;
 }
+
 
 .form-container form input,
 .form-container form select {

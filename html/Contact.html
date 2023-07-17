@@ -14,107 +14,150 @@
 </head>
 
 <body>
-    <div class="container">
-        <section class="form">
-            <div class="contact_us">
-                <div class="contact">
-                    <div class="form_content">
-                        <form name="messageForm" onsubmit="validation()" action="">
-                            <h1>Feedback form</h1>
-                            <input type="text" name="fname" id="fname" placeholder="Name">
-                            <input class="emai" type="text" name="Email" id="Email" placeholder="Email"><br>
-                            <input class="email" type="text" name="phone" id="phone" placeholder="Number">
-                            <input class="email emai" type="text" name="subject" id="subject" placeholder="Subject">
-                            <br>
-                            <input class="description email" type="text" name="Description" id="Description"
-                                placeholder="Description"><br>
+    <header>
+        <div class="navbar">
+            <img src="../srcs/camera-logo-photography-clip-art-camera.jpg" alt="" height="36px" width="36px">
+        
+            <div class="navlist">
+                <a href="../html/index.html">HOME</a>
+                <a href="../html/shop.html">SHOP</a>
+                <a href="../html/reference.html">CATEGORIES</a>
+                <a href="../html/index.html">AUTHOR</a>
+                <a href="../html/About.html">ABOUT</a>
+                <button class="login_navbar" onclick="window.location.href='./Login.html'" style="overflow: hidden;">Log
+                    In</button>
+                <button class="cart_image_button_homepage"><img src="../src/cart.png" height="25.6px" width="25.6px"
+                        alt="" style="cursor: pointer;"></button>
+            </div>
+        </div>
+    </header>
+    <!-- header section contains marquee sections with enqury, marquee & social media and navbar section with logo, its title, nav-items,login & cart icon -->
 
-                            <button class="Submit_btn email" type="submit" value="Send">Submit</button>
-                        </form>
-                    </div>
+    <section class="contact_back">
+        <div class="contact_us_background_image">
+
+        </div>
+    </section>
+
+    <section class="home">
+        <div class="icon">
+            <div class="home_icon">
+                <a href="../index.html"><img src="../srcs/contact/hom.png" alt=""></a>
+                <div class="border1"></div>
+                <p>Contact Us</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="form">
+        <div class="contact_us">
+            <div class="contact">
+                <div class="form_content">
+                    <form name="messageForm" onsubmit="validation()" action="">
+                        <h1>Feedback form</h1>
+                        <input type="text" name="fname" id="fname" placeholder="Name">
+                        <input class="emai" type="text" name="Email" id="Email" placeholder="Email"><br>
+                        <input class="email" type="text" name="phone" id="phone" placeholder="Number">
+                        <input class="email emai" type="text" name="subject" id="subject" placeholder="Subject"> <br>
+                        <input class="description email" type="text" name="Description" id="Description"
+                            placeholder="Description"><br>
+
+                        <button class="Submit_btn email" type="submit" value="Send">Submit</button>
+                    </form>
+                </div>
+                <div>
                     <div class="branch_box">
                         <div class="branches">
                             <div class="office1">
-                                <h2>Head Office</h2>
-                                <p>Kathmandu-4406, Putalisakad-Main road</p>
+                                <h2>Contact Us</h2>
+                                <p>01-5386042</p>
+                                <p>Riteeadhikari123@gmail.com</p>
+                                <p>Dilibazar, Kathmandu</p>
                                 <a href="#">Your near by location</a>
                             </div>
-                            <hr style="margin-top:25px ;">
-                            <div class="office1">
-                                <h2>Head Office</h2>
-                                <p>Kathmandu-4406, Putalisakad-Main road</p>
-                                <a href="#">Your near by location</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="google_map">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2130.976183921379!2d85.33064389692852!3d27.70249827981613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a0c2ba3533%3A0x3edf0a446234f0b8!2sSuryodaya%20Sec.%20School!5e0!3m2!1sen!2snp!4v1676025762308!5m2!1sen!2snp"
-                    width="80%" height="400" style="border:0; margin-top: 200px;margin-left: 10%;"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+    <section class="google_map">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2130.976183921379!2d85.33064389692852!3d27.70249827981613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a0c2ba3533%3A0x3edf0a446234f0b8!2sSuryodaya%20Sec.%20School!5e0!3m2!1sen!2snp!4v1676025762308!5m2!1sen!2snp"
+                width="80%" height="400" style="border:0; margin-top: 200px;margin-left: 10%;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
-        <!-- footer section -->
-        <footer>
-            <section class="footer">
-                <div class="footer_contents">
-                    <div class="payment_content">
-                        <img src="../srcs/payment/esewa.png" alt="">
-                        <img src="../srcs/payment/fonrpay.png" alt="">
-                        <img src="../srcs/payment/khalti.png" alt="">
-                        <img src="../srcs/payment/paypal.webp" alt="">
-                        <img src="../srcs/payment/visa.png" alt="">
+    <!-- footer section -->
+    <footer>
+        <section class="footer">
+            <div class="footer_contents">
+                <div class="payment_content">
+                    <img src="../srcs/payment/esewa.png" alt="">
+                    <img src="../srcs/payment/fonrpay.png" alt="">
+                    <img src="../srcs/payment/khalti.png" alt="">
+                    <img src="../srcs/payment/paypal.webp" alt="">
+                    <img src="../srcs/payment/visa.png" alt="">
+
+                </div>
+                <div class="footer_content">
+                    <div class="Best_Seller">
+                        <h4>Best Seller </h4>
+                        <p>Specials</p>
+                        <p>New products</p>
+                        <p>Site maps</p>
+                        <p>About us</p>
+                        <p>Conatct us</p>
+                        <p>Delivery</p>
+
                     </div>
-                    <div class="footer_content">
-                        <div class="Best_Seller">
-                            <h4>Best Seller</h4>
-                            <p>Specials</p>
-                            <p>New products</p>
-                            <p>Site maps</p>
-                            <p>About us</p>
-                            <p>Contact us</p>
-                            <p>Delivery</p>
-                        </div>
-                        <div class="Best_Seller">
-                            <h4>MyAccount</h4>
-                            <p>Account</p>
-                            <p>Address</p>
-                            <p>Payment</p>
-                            <p>Shipping</p>
-                            <p>Check out</p>
-                            <p>History</p>
-                        </div>
-                        <div class="Best_Seller b1">
-                            <h4>About Us</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem ratione eligendi!</p>
-                            <div class="locta">
-                                <img src="../srcs/image/gm2.png" alt="">
-                                <p>Kamalpokhari, Kathmandu</p>
-                            </div>
-                            <div class="locta">
-                                <img src="../srcs/image/gm1.png" alt="">
-                                <p>info_atclickit.com</p>
-                            </div>
-                            <div class="locta">
-                                <img src="../srcs/image/gm3.png" alt="">
-                                <p>9817112305, 9749722149</p>
-                            </div>
-                        </div>
+                    <div class="Best_Seller">
+                        <h4> MyAccount</h4>
+                        <p>Account</p>
+                        <p>Address</p>
+                        <p>Payment</p>
+                        <p>Shipping</p>
+                        <p>Check out</p>
+                        <p>History</p>
                     </div>
-                    <div class="copywrite">
-                        <div class="coypname">
-                            <p>Copyright 2023 | All Right Reserved | Powered By Islington College</p>
+                    <div class="Best_Seller b1">
+                        <h4>About Us</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem ratione eligendi!</p>
+                        <div class="locta" style="display:flex;">
+                            <img src="../srcs/image/gm2.png" alt="">
+                            <p>Kamalpokhari,Kathmandu</p>
+                        </div> <br>
+                        <div class="locta" style="display:flex;">
+                            <img src="../srcs/image/gm1.png" alt="">
+                            <p>info_atclickit.com</p>
+                        </div> <br>
+                        <div class="locta" style="display:flex;">
+                            <img src="../srcs/image/gm3.png" alt="">
+                            <p>9817112305, 9749722149</p>
                         </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="copywrite">
+                    <div class="coypname">
+                        <p>Copyright2023 | All Right Reserved | Powered By Softwarica college </p>
                     </div>
                 </div>
-            </section>
-        </footer>
-    </div>
+            </div>
+        </section>
+    </footer>
+
 
     <script src="../javascript/contactjs.js"></script>
 
@@ -130,10 +173,11 @@
                 alert("Empty field detected. Please fill all the forms");
                 event.preventDefault();
             } else {
-                alert("Thank you. Your feedback form has been successfully submitted");
+                alert("Thank you . Your feedback form has been successfully submmited");
             }
         }
     </script>
+
 </body>
 
 </html>

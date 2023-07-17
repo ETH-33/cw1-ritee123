@@ -10,10 +10,13 @@
     <meta name="author" content="Avishek Chaudhary">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/categories">
+    <link rel="stylesheet" href="./css/blog_homepage.css">
 </head>
 
 
 <body>
+    <div class="rc">
     <div class="background">
         <div class="position">
             <nav>
@@ -22,25 +25,23 @@
                         <a class="logo" href="index.html">Book Store</a>
                     </div>
                     <div class="navbar-center">
-                        <div class="search-bar">
-                            <input type="text" id="searchInput" placeholder="Search for books...">
-                            <button onclick="searchBooks()">Search</button>
-                            <div id="searchResults"></div>
-                        </div>
+                        <div class="navigation-links">
+                            <a href="about.php">About</a>
+                            <a href="categories.php">Categories</a>
+                            <a href="Best seller.php">Best seller</a>
+                            <a href="cart.php">Cart</a>
+                        </div>  
                     </div>
                     <div class="navbar-right">
                         <a href="http://localhost/CW1-RITEE123/php/register_form.php">My account</a>
+
                     </div>
+
                 </div>
 
             </nav>
 
-            <div class="navigation-links">
-                <a href="about.php">About</a>
-                <a href="categories.php">Categories</a>
-                <a href="Best seller.php">Best seller</a>
-                <a href="cart.php">Cart</a>
-            </div>
+            
         </div>
 
 
@@ -56,9 +57,9 @@
                                 science
                                 fiction,
                                 we have a wide range of genres to satisfy your interests</p>
-                            <button class="slider_button" onclick="window.location.href='../html/shop.html'">Shop
+                            <button class="slider_button" onclick="window.location.href='/book collection.html'">Shop
                                 Now</button>
-                                <div ><img src="../src/copy.jpg" alt=""></div>
+                                
                         </div>
                     </div>
                     <div class="slider_image">></div>
@@ -94,12 +95,12 @@
                 </div>
             </div>
         </section>
-       
-<div class="black">
-        <section>
-            <div class="whats-new">
-              <center><h2>What's New</h2></center>
+  
+   <section>
+    <div class="whats-news">
+           <center><h2>What's New</h2></center></div>
                 <!-- Books Container -->
+                <div class="whats-new">
                 <div class="books-container">
                     <!-- Book 1 -->
                     <div class="book">
@@ -160,47 +161,66 @@
                 </div>
             </div>
         </div>
-          
+    </section>
+    <!-- //About US -->
+    <div class="about_us_homepage_flex" id="about_us_homepage_flex">
+        <section class="homepage_about_us">
+          <div class="about_us_content">
+            <h2>About us</h2>
+            <h4>Discover the world of books</h4>
+            <p>BookWorld is a premier online book store that aims to connect book lovers with their next great read. With a vast collection of titles spanning various genres and subjects, BookWorld offers an immersive experience where readers can dive into the captivating world of literature.
+            At BookWorld, we understand the power of books to inspire, educate, and entertain. Whether you're seeking best-selling novels, thought-provoking non-fiction, captivating memoirs, or engaging children's books, we have something for every reader's taste and interest.
+           Our dedicated team of book enthusiasts carefully curates our catalog, ensuring that we offer a diverse range of titles from both renowned authors and emerging talents. From literary classics to contemporary masterpieces, you'll find a wealth of literary treasures waiting to be discovered.
+           Convenience is at the heart of BookWorld's mission. Our user-friendly website allows you to browse, search, and explore our extensive collection effortlessly. With just a few clicks, you can find your favorite authors, explore new releases, and even pre-order upcoming titles.</p>
+            <button class="homepage_about_us_button" onclick="window.location.href='./html/About.html'">Learn More</button>
+          </div>
+          <div class="about_us_image">
+            <img src="/src/BA.png" alt="BookWorld Image">
+          </div>
+        </section>
+      </div>
+      
             
             <section>
                 <div class="collect">
-                <h2>Book Collections</h2>
+              <center> <h2>Book Collections</h2></center> 
                 <div class="book-collections">
                 <div class="collection">
                         <img src="../src/fict.png" alt="Fiction Collection">
                         <h3>Fiction</h3>
                         <p>Explore captivating stories and imaginative worlds in our collection of fiction books.</p>
-                        <button class="explore-collection">Explore</button>
+                        <button class="explore-collection" onclick="window.location.href='/html/fiction.html'">Explore</button>
+
                     </div>
                     <div class="collection">
                         <img src="../src/non.png" alt="Nonfiction Collection">
                         <h3>Nonfiction</h3>
                         <p>Expand your knowledge and discover real-life stories in our collection of nonfiction books.</p>
-                        <button class="explore-collection">Explore</button>
+                        <button class="explore-collection" onclick="window.location.href='/html/fiction.html'">Explore</button>
                     </div>
                     <div class="collection">
                         <img src="../src/mis.png" alt="Mystery Collection">
                         <h3>Mystery</h3>
                         <p>Unravel thrilling mysteries and engage in suspenseful tales with our collection of mystery books.</p>
-                        <button class="explore-collection">Explore</button>
+                        <button class="explore-collection" onclick="window.location.href='/html/fiction.html'">Explore</button>
                     </div>
                     <div class="collection">
                         <img src="../src/science.png" alt="Science Fiction Collection">
                         <h3>Science Fiction</h3>
                         <p>Venture into the realms of the future and beyond with our collection of science fiction books.</p>
-                        <button class="explore-collection">Explore</button>
+                        <button class="explore-collection" onclick="window.location.href='/html/fiction.html'">Explore</button>
                     </div>
                     <div class="collection">
                         <img src="../src/romance .png" alt="Romance Collection">
                         <h3>Romance</h3>
                         <p>Indulge in heartfelt love stories and passionate romances with our collection of romance books.</p>
-                        <button class="explore-collection">Explore</button>
+                        <button class="explore-collection" onclick="window.location.href='/html/fiction.html'">Explore</button>
                     </div>
                     <div class="collection">
                         <img src="../src/history.png" alt="History Collection">
                         <h3>History</h3>
                         <p>Delve into the past and unravel historical events with our collection of history books.</p>
-                        <button class="explore-collection">Explore</button>
+                        <button class="explore-collection" onclick="window.location.href='/html/fiction.html'">Explore</button>
                     </div>
                 </div>
             </div>
@@ -224,7 +244,7 @@
 
               <section>
                 <div class="authors">
-                    <h2>Authors</h2>
+                    <center><h2>Authors</h2></center>
                     <!-- Author 1 -->
                     <div class="author-container">
                         <div class="slide">
@@ -319,11 +339,12 @@
             <div class="footer-section social">
                 <h3>Follow Us</h3>
                 <p>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/"><img src="/src/face.png" alt=""></a>
+                    <a href="https://www.instagram.com/direct/inbox/"><img src="/src/instagram.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="/src/youtube.png" alt=""></a>
+                    <a href="https://www.linkedin.com/"><img src="/src/linkedin.png" alt=""></a>
                 </p>
+                
             </div>
         </div>
         <div class="footer-bottom">
