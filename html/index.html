@@ -11,7 +11,6 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="./css/categories">
-    <link rel="stylesheet" href="./css/blog_homepage.css">
 </head>
 
 
@@ -26,23 +25,21 @@
                     </div>
                     <div class="navbar-center">
                         <div class="navigation-links">
-                            <a href="about.php">About</a>
-                            <a href="categories.php">Categories</a>
-                            <a href="Best seller.php">Best seller</a>
-                            <a href="cart.php">Cart</a>
+                            <a href="#about_us">ABOUT</a>
+                            <a href="#Categories">CATEGORIES</a>
+                            <a href="#Author">AUTHOR</a>
+                            <a href="#Best seller">BEST SELLER</a>
+                            <button class="cart_image_button_homepage"><img src="../src/cart.png" height="25.6px" width="25.6px"
+                                alt="" style="cursor: pointer;"></button>
                         </div>  
                     </div>
+                    
                     <div class="navbar-right">
-                        <a href="http://localhost/CW1-RITEE123/php/register_form.php">My account</a>
-
-                    </div>
-
-                </div>
-
-            </nav>
-
-            
-        </div>
+                        <a href="http://localhost/CW1-RITEE123/php/register_form.php">LOGIN IN</a>
+                        </div>
+                     </div>
+                       </nav>
+                      </div>
 
 
         <!-- Rest of your content -->
@@ -59,6 +56,8 @@
                                 we have a wide range of genres to satisfy your interests</p>
                             <button class="slider_button" onclick="window.location.href='/book collection.html'">Shop
                                 Now</button>
+                                <div class="slider_image"><img src="/sr" alt=""
+                                    style="overflow: hidden;"></div>
                                 
                         </div>
                     </div>
@@ -73,6 +72,8 @@
                                 literary works in various genres.</p>
                             <button class="slider_button" onclick="window.location.href='../html/shop.html'">Shop
                                 Now</button>
+                                <div class="slider_image"><img src="./srcs/wp5969872-camera-black-wallpapers.jpg" alt=""
+                                    style="overflow: hidden;"></div>    
                         </div>
                     </div>
                     <div class="slider_image"> 
@@ -89,6 +90,8 @@
                             </p>
                             <button class="slider_button" onclick="window.location.href='../html/shop.html'">Shop
                                 Now</button>
+                                <div class="slider_image"><img src="./srcs/wp5969872-camera-black-wallpapers.jpg" alt=""
+                                    style="overflow: hidden;"></div>
                         </div>
                     </div>
                     <div class="slider_image"></div>
@@ -163,7 +166,7 @@
         </div>
     </section>
     <!-- //About US -->
-    <div class="about_us_homepage_flex" id="about_us_homepage_flex">
+    <div class="about_us" id="about_us">
         <section class="homepage_about_us">
           <div class="about_us_content">
             <h2>About us</h2>
@@ -172,17 +175,15 @@
             At BookWorld, we understand the power of books to inspire, educate, and entertain. Whether you're seeking best-selling novels, thought-provoking non-fiction, captivating memoirs, or engaging children's books, we have something for every reader's taste and interest.
            Our dedicated team of book enthusiasts carefully curates our catalog, ensuring that we offer a diverse range of titles from both renowned authors and emerging talents. From literary classics to contemporary masterpieces, you'll find a wealth of literary treasures waiting to be discovered.
            Convenience is at the heart of BookWorld's mission. Our user-friendly website allows you to browse, search, and explore our extensive collection effortlessly. With just a few clicks, you can find your favorite authors, explore new releases, and even pre-order upcoming titles.</p>
-            <button class="homepage_about_us_button" onclick="window.location.href='./html/About.html'">Learn More</button>
+            <button class="homepage_about_us_button" onclick="window.location.href='./about us.html'">Learn More</button>
           </div>
           <div class="about_us_image">
-            <img src="/src/BA.png" alt="BookWorld Image">
+            <img src="/src/pint 5.png" alt="BookWorld Image">
           </div>
+        </div>
         </section>
-      </div>
-      
-            
-            <section>
-                <div class="collect">
+        <section>
+                <div class="collect" id="Categories">
               <center> <h2>Book Collections</h2></center> 
                 <div class="book-collections">
                 <div class="collection">
@@ -235,15 +236,10 @@
                     </div>
                 </div>
             </section>
-       
             
-            
-
               <!-- Author Section -->
-
-
-              <section>
-                <div class="authors">
+          
+                <div class="authors" id="Author">
                     <center><h2>Authors</h2></center>
                     <!-- Author 1 -->
                     <div class="author-container">
@@ -321,37 +317,60 @@
                     </div>
                 </div>
             </section>
-       
+            <!--best seller book-->
+            <section>
+            <div class="Best" id="Best seller">
+                <h1>Best Seller Book of 2023</h1>
+                <h2>A Tale of Two Cities</h2>
+              <img src="/src/a tale of two city.png " alt="A Tale of Two Cities Cover">
+              <h3>By Charles Dickens</h3>
+             <center><p>
+                "A Tale of Two Cities" is a timeless classic novel written by Charles Dickens. Set in London and Paris before and during
+                 the French Revolution, the story revolves around the lives of several characters who are deeply 
+                 impacted by the tumultuous historical events of the time. Filled with vivid descriptions, intricate plot twists, and 
+                 memorable characters,this novel explores themes of love, sacrifice, and redemption. It is a gripping tale that showcases 
+                 the stark contrasts between the two cities and the resilience of the human spirit in the face of adversity.
+                </p></center> 
+                 </div>
+                </section>
+    
             
     </div>
     <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
+        
+        <section class="footer">
+    
+            <div class="box-container">
+         
+               <div class="box">
                 <h3>About</h3>
                 <p>Welcome to our Book Store! We are dedicated to providing a wide range of books in various genres, ensuring that every reader finds something to indulge in. Explore our collection, get lost in captivating stories, and embark on a literary journey with us.</p>
+               </div>
+         
+               <div class="box">
+                  <h3>Contact info</h3>
+                  <p> <i class="fas fa-phone"></i> ++977 9840412788</p>
+                  <p> <i class="fas fa-phone"></i> 01-536042</p>
+                  <p> <i class="fas fa-envelope"></i> Riteeadhikari123@gmail.com </p>
+                  <p> <i class="fas fa-map-marker-alt"></i> Sitapaila, Kathmandu -10077 </p>
+               </div>
+         
+               <div class="box">
+                  <h3>Follow us</h3>
+                  <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i> Facebook</a>
+                  <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i> instagram </a>
+                  <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                  <a href="https://www.youtube.com/"> <i class="fab fa-Youtube"></i> Youtube </a>
+                  
+                  
+               </div>
+         
             </div>
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p><i class="fa fa-phone"></i> +1 123 456 789</p>
-                <p><i class="fa fa-envelope"></i> info@bookstore.com</p>
-                <p><i class="fa fa-map-marker"></i> 123 Book Street, City, Country</p>
-            </div>
-            <div class="footer-section social">
-                <h3>Follow Us</h3>
-                <p>
-                    <a href="https://www.facebook.com/"><img src="/src/face.png" alt=""></a>
-                    <a href="https://www.instagram.com/direct/inbox/"><img src="/src/instagram.png" alt=""></a>
-                    <a href="https://www.youtube.com/"><img src="/src/youtube.png" alt=""></a>
-                    <a href="https://www.linkedin.com/"><img src="/src/linkedin.png" alt=""></a>
-                </p>
-                
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Book Store. All rights reserved.</p>
-        </div>
+         
+            <p class="credit"> &copy; copyright  @  by <span>Ritee Adhikari</span> </p>
+         
+         </section>
     </footer>
-    
 
 
 </body>

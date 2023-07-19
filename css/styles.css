@@ -1,4 +1,54 @@
 /* book store*/
+.heading{
+  min-height: 10vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  background: url(../images/heading-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+
+.header .header-1{
+  background-color: var(--light-bg);
+}
+
+.header .header-1 .flex{
+  padding:2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.header .header-1 .flex .share a{
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  color:var(--black);
+}
+
+.header .header-1 .flex .share a:hover{
+  color:var(--purple);
+}
+
+.header .header-1 .flex p{
+  font-size: 2rem;
+  color:var(--light-color);
+}
+
+.header .header-1 .flex p a{
+  color:var(--purple);
+}
+
+.header .header-1 .flex p a:hover{
+  text-decoration: underline;
+}
+
 .position {
    
     position: sticky;
@@ -150,10 +200,18 @@ section {
 }
 
 /* slider css starts */
+.image_slider_container {
+ 
+  /* background-color: green; */
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
 
 .back {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value as needed */
-  background-image: url(../src/pc.jpg);
+  background-image: url("../src/middle.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,12 +220,7 @@ section {
   align-items: center; /* Center the slider section vertically */
 }
 
-.image_slider_container {
-  position: relative;
-  height: 80vh;
-  width: 100%;
-  overflow: hidden;
-}
+
 
 .image_slider_container .image_sliders {
   position: absolute;
@@ -398,53 +451,8 @@ section {
   }
   
 
-  /* CSS for Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .footer-section {
-    flex-basis: 30%;
-    margin-bottom: 20px;
-  }
-  
-  .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-    font-size: 14px;
-  }
-  
-  .footer-section.social p {
-    font-size: 18px;
-  }
-  
-  .footer-section.social a {
-    color: #fff;
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    color: #ccc;
-    font-size: 14px;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-  }
+ 
+
 
 
 
@@ -521,22 +529,24 @@ footer {
 
 
 
-.about_us_homepage_flex {
+.about_us {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
+
 }
 
 .homepage_about_us {
   display: flex;
   width: 80%;
   margin: 0 auto;
+  background-image: url("../src/pint\ 3.png");
 }
 
 .about_us_content {
   flex: 1;
   padding: 40px;
-
   color: white;
 }
 
@@ -548,7 +558,7 @@ footer {
 }
 
 .about_us_image img {
-  max-width: 400%;
+  max-width: 100%;
   max-height: 400%;
 }
 
@@ -588,4 +598,105 @@ footer {
   background-color: red;
   font-size: 18px;
   cursor: pointer;
+}
+
+
+
+
+.Best {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url("../src/pict.png");
+}
+
+ .Best h1 {
+  color:aliceblue;
+  text-align: center;
+}
+
+.Best h2 {
+  color:aliceblue;
+  text-align: center;
+}
+
+.Best h3 {
+  color:aliceblue;
+  text-align: center;
+}
+
+.Best img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+}
+
+ .Best p {
+  color:aliceblue;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Box Container */
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Box */
+.box {
+  flex-basis: 25%;
+  margin-bottom: 20px;
+}
+
+.box h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.box a {
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+/* Contact Info */
+.box p {
+  margin-bottom: 5px;
+}
+
+.box i {
+  margin-right: 5px;
+}
+
+/* Follow Us */
+.box a i {
+  margin-right: 5px;
+}
+
+/* Credit */
+.credit {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #ccc;
+}
+
+.credit span {
+  color: #fff;
 }

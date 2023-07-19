@@ -1,7 +1,11 @@
 
 
+
+
+
+
 .contact_us_background_image{
-  background-image: url(../src/backsk.png);
+  background-image: url("/php/backsk.png");
   background-attachment: fixed;
   width: 99%;
   height: 500px;
@@ -63,35 +67,116 @@ background-color: #434141;
   font-weight: 600;
   margin-left: 32px;
 }
-.contact_us{
+
+
+.contact form{
+  margin:0 auto;
+  background-color: var(--light-bg);
+  border-radius: .5rem;
+  border:var(--border);
+  padding:2rem;
+  max-width: 50rem;
+  margin:0 auto;
+  text-align: center;
+}
+
+.contact form h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color:var(--black);
+}
+
+.contact form .box{
+  margin:1rem 0;
   width: 100%;
+  border:var(--border);
+  background-color: var(--white);
+  padding:1.2rem 1.4rem;
+  font-size: 1.8rem;
+  color:var(--black);
+  border-radius: .5rem;
 }
-.contact{
-  width: 80%;
+
+.contact form textarea{
+  height: 20rem;
+  resize: none;
+}
+
+
+.message{
+  position: sticky;
+  top:0;
+  margin:0 auto;
+  max-width: 1200px;
+  background-color: var(--white);
+  padding:2rem;
   display: flex;
-  margin-left: 10%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  gap:1.5rem;
 }
-.form_content{
-  width: 65%;
-  position: relative;
-  
+
+.message span{
+  font-size: 2rem;
+  color:var(--black);
 }
-.form_content h1{
-  font-size: 46px;
-  color: #666565;
+
+.message i{
+  cursor: pointer;
+  color:var(--red);
+  font-size: 2.5rem;
 }
-.form_content input{
-  .form_content input {
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    background: lightgrey;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 20px 50px #000;
-  }
-  
-   box-shadow: 5px 20px 50px #000;
+
+.message i:hover{
+  transform: rotate(90deg);
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color:var(--black);
+  font-size: 4rem;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:1rem 3rem;
+  cursor: pointer;
+  color:var(--white);
+  font-size: 1.8rem;
+  border-radius: .5rem;
+  text-transform: capitalize;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+  background-color: var(--black);
+}
+
+.white-btn,
+.btn{
+  background-color: var(--purple);
+}
+
+.option-btn{
+  background-color: var(--orange);
+}
+
+.delete-btn{
+  background-color: var(--red);
+}
+
+.white-btn:hover{
+  background-color: var(--white);
+  color:var(--black);
 }
 .email{
   margin-top: 20px;

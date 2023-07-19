@@ -1,3 +1,56 @@
+<?php
+session_start();
+
+// Function to establish a database connection
+function connectToDatabase() {
+    $host = 'localhost'; // Your database host
+    $username = 'username'; // Your database username
+    $password = 'password'; // Your database password
+    $database = 'bookstore(feedback)'; // Your database name
+
+    // Create a connection
+    $conn = new mysqli($host, $username, $password, $bookstore(feedback));
+
+    // Check the connection
+    if ($conn->connect_error) {
+        die('Connection failed: ' . $conn->connect_error);
+    }
+
+    return $conn;
+}
+
+// Function to store the form data in the database
+function storeFeedback($name, $email, $phone, $subject, $description) {
+    $conn = connectToDatabase();
+
+    // Prepare and execute the query to insert into the feedback table
+    $stmt = $conn->prepare("INSERT INTO feedback (name, email, phone, subject, description) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $name, $email, $phone, $subject, $description);
+    $stmt->execute();
+
+    $stmt->close();
+    $conn->close();
+}
+
+// Example usage:
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Form submission detected
+
+    // Get form data
+    $name = $_POST['fname'];
+    $email = $_POST['Email'];
+    $phone = $_POST['phone'];
+    $subject = $_POST['subject'];
+    $description = $_POST['Description'];
+
+    // Store the form data in the database
+    storeFeedback($name, $email, $phone, $subject, $description);
+
+    // Display success message or redirect to another page
+    echo "Thank you. Your feedback form has been successfully submitted.";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +62,9 @@
     <meta name=" keywords" content="webpage, clickIT, technology, e-commerce, promotion">
     <meta name="author" content="Avishek Chaudhary">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/contact_style.css">
+    <link rel="stylesheet" href="css/Contact.css">
+
+   
 </head>
 
 <body>
@@ -20,8 +74,7 @@
         
             <div class="navlist">
                 <a href="../html/index.html">HOME</a>
-                <a href="../html/shop.html">SHOP</a>
-                <a href="../html/reference.html">CATEGORIES</a>
+                <a href="../html/index.html">CATEGORIES</a>
                 <a href="../html/index.html">AUTHOR</a>
                 <a href="../html/About.html">ABOUT</a>
                 <button class="login_navbar" onclick="window.location.href='./Login.html'" style="overflow: hidden;">Log
@@ -42,7 +95,7 @@
     <section class="home">
         <div class="icon">
             <div class="home_icon">
-                <a href="../index.html"><img src="../srcs/contact/hom.png" alt=""></a>
+                <a href="../index.html"><img src="pc.jpg" alt=""></a>
                 <div class="border1"></div>
                 <p>Contact Us</p>
             </div>
@@ -51,22 +104,20 @@
     </section>
 
 
-    <section class="form">
-        <div class="contact_us">
-            <div class="contact">
-                <div class="form_content">
-                    <form name="messageForm" onsubmit="validation()" action="">
-                        <h1>Feedback form</h1>
-                        <input type="text" name="fname" id="fname" placeholder="Name">
-                        <input class="emai" type="text" name="Email" id="Email" placeholder="Email"><br>
-                        <input class="email" type="text" name="phone" id="phone" placeholder="Number">
-                        <input class="email emai" type="text" name="subject" id="subject" placeholder="Subject"> <br>
-                        <input class="description email" type="text" name="Description" id="Description"
-                            placeholder="Description"><br>
+    <section class="contact">
 
-                        <button class="Submit_btn email" type="submit" value="Send">Submit</button>
-                    </form>
-                </div>
+<form action="" method="post">
+   <h3>say something!</h3>
+   <input type="text" name="name" required placeholder="enter your name" class="box">
+   <input type="email" name="email" required placeholder="enter your email" class="box">
+   <input type="number" name="number" required placeholder="enter your number" class="box">
+   <textarea name="message" class="box" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+   <input type="submit" value="send message" name="send" class="btn">
+</form>
+
+</section>
+
+
                 <div>
                     <div class="branch_box">
                         <div class="branches">
