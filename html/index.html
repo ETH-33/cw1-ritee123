@@ -11,6 +11,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="./css/categories">
+    <link rel="stylesheet" href="./css/cart.css">
 </head>
 
 
@@ -29,8 +30,8 @@
                             <a href="#Categories">CATEGORIES</a>
                             <a href="#Author">AUTHOR</a>
                             <a href="#Best seller">BEST SELLER</a>
-                            <button class="cart_image_button_homepage"><img src="../src/cart.png" height="25.6px" width="25.6px"
-                                alt="" style="cursor: pointer;"></button>
+                            <button  href="../html/cart.html"><img src="../src/cart.png" height="25.6px" width="25.6px"
+                                alt=""></button>
                         </div>  
                     </div>
                     
@@ -106,20 +107,20 @@
                 <div class="whats-new">
                 <div class="books-container">
                     <!-- Book 1 -->
-                    <div class="book">
-                        <img src="/src/save.PNG" alt="Book 1">
-                        <h3>Saving time</h3>
-                        <p class="price">$19.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
+                    <div class="book" id="1">
+                     <img src="/src/save.PNG" alt="Book 1">
+                     <h3>Saving time</h3>
+                     <p class="price">$19.99</p>
+                     <button class="add-to-cart" data-id="1">Add to Cart</button>
                     </div>
-                    <!-- Book 2 -->
-                    <div class="book">
-                        <img src="/src/have.PNG" alt="Book 2">
-                        <h3>The Great believers</h3>
-                        <p class="price">$14.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
+                   <!-- Book 2 -->
+                   <div class="book" id="2">
+                   <img src="/src/have.PNG" alt="Book 2">
+                  <h3>The Great believers</h3>
+                   <p class="price">$14.99</p>
+                   <button class="add-to-cart" data-id="2">Add to Cart</button>
                     </div>
-                    <!-- Book 3 -->
+                     <!-- Book 3 -->
                     <div class="book">
                         <img src="/src/cold.PNG" alt="Book 3">
                         <h3>Cold people</h3>
@@ -164,6 +165,7 @@
                 </div>
             </div>
         </div>
+     
     </section>
     <!-- //About US -->
     <div class="about_us" id="about_us">

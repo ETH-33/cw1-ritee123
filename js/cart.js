@@ -1,69 +1,109 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const books = document.querySelectorAll(".book");
-    const cartItems = document.getElementById("cart-items");
-    const cartTotal = document.getElementById("cart-total");
-    let cartTotalAmount = 0;
+let openShopping = document.querySelector('.shopping');
+let closeShopping = document.querySelector('.closeShopping');
+let list = document.querySelector('.list');
+let listCard = document.querySelector('.listCard');
+let body = document.querySelector('body');
+let total = document.querySelector('.total');
+let quantity = document.querySelector('.quantity');
 
-    books.forEach(book => {
-        book.addEventListener("click", () => {
-            const bookId = book.getAttribute("data-id");
-            const bookTitle = book.getAttribute("data-title");
-            const bookPrice = parseFloat(book.getAttribute("data-price"));
+openShopping.addEventListener('click', ()=>{
+    body.classList.add('active');
+})
+closeShopping.addEventListener('click', ()=>{
+    body.classList.remove('active');
+})
 
-            // Check if the book is already in the cart
-            const existingCartItem = cartItems.querySelector(`li[data-id="${bookId}"]`);
-            if (existingCartItem) {
-                alert(`${bookTitle} is already in the cart.`);
-                return;
-            }
+let products = [
+    {
+        id: 1,
+        name: 'Saving time',
+        image: 'save.PNG',
+        price: 500
+    },
+    {
+        id: 2,
+        name: 'PRODUCT NAME 2',
+        image: '2.PNG',
+        price: 400
+    },
+    {
+        id: 3,
+        name: 'PRODUCT NAME 3',
+        image: '3.PNG',
+        price: 450
+    },
+    {
+        id: 4,
+        name: 'PRODUCT NAME 4',
+        image: '4.PNG',
+        price: 550
+    },
+    {
+        id: 5,
+        name: 'PRODUCT NAME 5',
+        image: '5.PNG',
+        price: 350
+    },
+    {
+        id: 6,
+        name: 'PRODUCT NAME 6',
+        image: '6.PNG',
+        price: 600
+    }
+];
 
-            // Add book to the cart
-            const cartItem = document.createElement("li");
-            cartItem.setAttribute("data-id", bookId);
-            cartItem.innerHTML = `${bookTitle} - $${bookPrice}`;
-            cartItems.appendChild(cartItem);
-
-            // Update total amount
-            cartTotalAmount += bookPrice;
-            cartTotal.textContent = cartTotalAmount.toFixed(2);
-        });
-    });
-});
-
-
-// Cart items array to store the selected books
-let cartItems = [];
-
-// Function to add a book to the cart
-function addToCart(bookTitle, bookPrice) {
-  cartItems.push({ title: bookTitle, price: bookPrice });
-  updateCartDisplay();
+let listCards  = [];
+function initApp(){
+    products.forEach((value, key) =>{
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item');
+        newDiv.innerHTML = `
+            <img src="src/${value.image}">
+            <div class="title">${value.name}</div>
+            <div class="price">${value.price.toLocaleString()}</div>
+            <button onclick="addToCard(${key})">Add To Card</button>`;
+        list.appendChild(newDiv);
+    })
 }
-
-// Function to update the cart display
-function updateCartDisplay() {
-  const cartElement = document.getElementById('cart-items');
-  cartElement.innerHTML = '';
-  let totalAmount = 0;
-  cartItems.forEach(item => {
-    cartElement.innerHTML += `<li>${item.title} - $${item.price.toFixed(2)}</li>`;
-    totalAmount += item.price;
-  });
-  document.getElementById('cart-total').textContent = totalAmount.toFixed(2);
+initApp();
+function addToCard(key){
+    if(listCards[key] == null){
+        // copy product form list to list card
+        listCards[key] = JSON.parse(JSON.stringify(products[key]));
+        listCards[key].quantity = 1;
+    }
+    reloadCard();
 }
-
-// Wait for the DOM to be fully loaded before attaching event listeners
-document.addEventListener('DOMContentLoaded', () => {
-  // Get all "Add to Cart" buttons
-  const addToCartButtons = document.querySelectorAll('.add-to-cart');
-
-  // Attach click event listener to each button
-  addToCartButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const bookTitle = button.parentNode.querySelector('h3').textContent;
-      const bookPrice = parseFloat(button.parentNode.querySelector('.price').textContent.slice(1));
-      addToCart(bookTitle, bookPrice);
-      alert(`${bookTitle} added to the cart!`);
-    });
-  });
-});
+function reloadCard(){
+    listCard.innerHTML = '';
+    let count = 0;
+    let totalPrice = 0;
+    listCards.forEach((value, key)=>{
+        totalPrice = totalPrice + value.price;
+        count = count + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img src="image/${value.image}"/></div>
+                <div>${value.name}</div>
+                <div>${value.price.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice.toLocaleString();
+    quantity.innerText = count;
+}
+function changeQuantity(key, quantity){
+    if(quantity == 0){
+        delete listCards[key];
+    }else{
+        listCards[key].quantity = quantity;
+        listCards[key].price = quantity * products[key].price;
+    }
+    reloadCard();
+}
